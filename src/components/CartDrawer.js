@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 const CartButton = styled.div`
@@ -14,31 +14,39 @@ border-top-left-radius: 0;
 border-top-right-radius: 0;
 color: #ffffff;
 font-size: 1rem;
+z-index: 999;
+cursor: pointer;
 `;
 const CartFixed = styled.div`
 position: fixed;
 height: 100%;
 width: 50%;
-right: -100%;
 background-color: #000000;
 top: 0;
+transition: 0.5s;
+right: ${({ cart }) => (cart ? '0' : '-100%')}
 `;
 const Heading = styled.h1`
 color: #ffffff;
+padding-top: 10rem;
+text-align: center;
 `;
 
-class CartDrawer extends Component{
-  render(){
-    return(
-      <>
-      <CartButton>
-        <h5>Cart (0)</h5>
-      </CartButton>
-      <CartFixed>
-        <Heading>No Items In Your Cart</Heading>
-      </CartFixed>
-      </>
-    )
-  }
+const CartDrawer = () =>{
+  const [cart, setCart] = useState(false)
+
+  const showCart = () => setCart(!cart)
+  return(
+    <>
+    <CartButton onClick={showCart}>
+      <h5><i className="fas fa-shopping-cart"></i> (0)</h5>
+    </CartButton>
+    <CartFixed cart={cart}>
+      <Heading>
+        No Items In Your Cart<br></br><i className="fas fa-shopping-cart"></i>
+      </Heading>
+    </CartFixed>
+    </>
+  )
 }
 export default CartDrawer;
