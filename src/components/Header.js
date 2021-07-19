@@ -63,7 +63,9 @@ const Header = () => {
     <HeaderTop>
         <Wrapper>
           <LogoContain>
+            <a href="/">
             <Logo>AJ Merch</Logo>
+            </a>
           </LogoContain>
           <MenuContain>
             <HamBurger>
