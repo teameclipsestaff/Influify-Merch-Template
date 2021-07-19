@@ -67,7 +67,7 @@ const Header = () => {
           </LogoContain>
           <MenuContain>
             <HamBurger>
-            <i onClick={showMenu}className="fas fa-bars"></i>
+            <i onClick={showMenu}className={menu ? 'fas fa-times' : 'fas fa-bars'}></i>
             </HamBurger>
             <Nav menu={menu}>
             <li><Link href="/">Shop All</Link></li>
