@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const FooterBottom = styled.div`
 position: relative;
 width: 100%;
-height: 100px;
+height: 200px;
 background-color: #000000;
 `;
 const Wrapper = styled.div`
@@ -18,6 +18,7 @@ flex: 1;
 const CopyrightText = styled.p`
 text-align: center;
 font-size: 20px;
+color: #ffffff;
 `;
 const MenuContainer = styled.div`
 flex: 1;
@@ -28,7 +29,7 @@ text-align: center;
 `;
 const MenuLink = styled.a`
 text-decoration: none;
-color: #000000;
+color: #ffffff;
 `;
 const SocialContainer = styled.div`
 flex: 1;
@@ -40,7 +41,7 @@ justify-content: space-around;
 `;
 const SocialIcon = styled.a`
 text-decoration: none;
-color: #000000;
+color: #ffffff;
 font-size: 30px;
 `;
 function Footer(){
