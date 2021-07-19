@@ -31,7 +31,7 @@ justify-content: space-around;
   width: 10rem;
   height: 10rem;
   background-color: #000000;
-  transition: 0.5s;
+  transition: 0.3s;
   top: ${({ menu }) => (menu ? '4.5rem' : '-100%')}
 }
 `;
