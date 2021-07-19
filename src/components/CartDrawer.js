@@ -24,7 +24,9 @@ width: 50%;
 background-color: #000000;
 top: 0;
 transition: 0.5s;
-right: ${({ cart }) => (cart ? '0' : '-100%')}
+right: ${({ cart }) => (cart ? '0' : '-100%')};
+z-index: 998;
+box-shadow: 10px 10px 10px 10px red;
 `;
 const Heading = styled.h1`
 color: #ffffff;
