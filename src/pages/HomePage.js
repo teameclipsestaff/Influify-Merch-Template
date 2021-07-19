@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
 const HeroSection = styled.div`
@@ -40,7 +40,10 @@ const addtocartBTN = styled.button`
 
 `;
 
-function HomePage(){
+
+
+const HomePage = () => {
+  
   return(
     <>
     <HeroSection>
