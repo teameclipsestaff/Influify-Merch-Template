@@ -19,6 +19,9 @@ display: grid;
 grid-column-gap: 50px;
 grid-template-columns: auto auto auto;
 padding: 10px;
+@media (max-width: 600px) {
+  grid-template-columns: repeat(1, 1fr);
+}
 `;
 const ProductGridItem = styled.div`
 position: relative;
