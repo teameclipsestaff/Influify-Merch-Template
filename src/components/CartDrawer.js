@@ -39,7 +39,7 @@ const CartDrawer = () =>{
   return(
     <>
     <CartButton onClick={showCart}>
-      <h5><i className="fas fa-shopping-cart"></i> (0)</h5>
+      <h5><i className={cart ? 'fas fa-times' : 'fas fa-shopping-cart'}></i> (0)</h5>
     </CartButton>
     <CartFixed cart={cart}>
       <Heading>
