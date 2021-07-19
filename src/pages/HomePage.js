@@ -38,18 +38,23 @@ function HomePage(){
     <ProductGrid>
       <ProductGridItem>
         <h1>Title</h1>
+        <p>$1.00</p>
       </ProductGridItem>
       <ProductGridItem>
         <h1>Title</h1>
+        <p>$1.00</p>
       </ProductGridItem>
       <ProductGridItem>
         <h1>Title</h1>
+        <p>$1.00</p>
       </ProductGridItem>
       <ProductGridItem>
         <h1>Title</h1>
+        <p>$1.00</p>
       </ProductGridItem>
       <ProductGridItem>
         <h1>Title</h1>
+        <p>$1.00</p>
       </ProductGridItem>
     </ProductGrid>
     </>
